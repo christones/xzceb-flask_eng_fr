@@ -11,7 +11,7 @@ def home():
 
 @app.route("/englishToFrench, methods = 'POST'")
 def englishToFrench():
-    textToTranslate = request.args.get(text)
+    textToTranslate = request.args.get('textToTranslate')
     # Write your code here
     return  englishTofrench(textToTranslate) 
 
